@@ -1,6 +1,6 @@
-- Dev: `ghcid -r`
-- Run: `cabal run`
-- Build: `IN_NIX_SHELL= nix-build` (envvar needs to be empty because if build is started in nix-shell it will not work otherwise)
+- Dev: `./start dev`
+- Run: `./start run`
+- Build: `./start build`
 
 Add dependencies to `haskell-example-project.cabal` in the `build-depends` section and reload nix-shell/vs-code.
 

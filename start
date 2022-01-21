@@ -1,0 +1,19 @@
+#!sh
+
+case $1 in
+    run)
+        echo running
+        cabal run
+        ;;
+    dev)
+        echo dev
+        ghcid -r
+        ;;
+    build)
+        echo build
+        IN_NIX_SHELL= nix-build
+        ;;
+    *)
+        echo Use like this: \"./start run\", \"./start dev\" or \"./start build\"
+        ;;
+esac
